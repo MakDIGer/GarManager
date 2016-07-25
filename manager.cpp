@@ -1,9 +1,9 @@
 /*
  * manager.cpp
  * 
- * Copyright 2015 Nikolay <Nikolay@REX>
+ * Copyright 2015-2016 Nikolay <Nikolay@REX>
  * 
- * Version 1.2
+ * Version 1.3 beta
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -200,7 +200,7 @@ if (check_process(process_name_check))
 void download(string day)
 {
 	cout << endl;
-	buffer_line = "E:\\Garant-Fs711\\Download.exe -auto -dsc 90 -nofinalmessage -to " + day;
+	buffer_line = "E:\\Garant-Fs8\\Download.exe -auto -dsc 90 -nofinalmessage -to " + day;
 	cout << buffer_line << endl;
 	run_cmd(buffer_line);
 	cout << "Waiting for the finish of downloading" << endl;
@@ -210,7 +210,7 @@ void download(string day)
 	checking_process("F1Download.run");
 	Sleep(300000);
 	
-	if (check_file("E:\\Garant-FS711\\delta\\","zip"))
+	if (check_file("E:\\Garant-FS8\\delta\\","zip"))
 	{
 		cout << "There is ZIP file." << endl;
 	} else
@@ -304,14 +304,14 @@ int copy_etalon(int copy_mode)
 		return 1;
 	}
 	
-	pcs monster("\\\\monster\\Garant.Srv\\F711\\","\\\\monster\\Garant.Srv\\start.txt");
-	pcs rex("\\\\rex\\Garant.Srv\\F711\\","\\\\rex\\Garant.Srv\\start.txt");
-	pcs rr10("\\\\rr10\\Garant.Srv\\F711\\","\\\\rr10\\Garant.Srv\\start.txt");
-	pcs usepc1("E:\\Garant.SRV\\F711\\","E:\\Garant.SRV\\start.txt");
+	pcs monster("\\\\monster\\Garant.Srv\\F8\\","\\\\monster\\Garant.Srv\\start.txt");
+	pcs rex("\\\\rex\\Garant.Srv\\F8\\","\\\\rex\\Garant.Srv\\start.txt");
+	pcs rr10("\\\\rr10\\Garant.Srv\\F8\\","\\\\rr10\\Garant.Srv\\start.txt");
+	pcs usepc1("E:\\Garant.SRV\\F8\\","E:\\Garant.SRV\\start.txt");
 	
 	data = "";
-	data1 = "E:\\Garant-FS711\\data1\\";
-	data2 = "E:\\Garant-FS711\\data2\\";
+	data1 = "E:\\Garant-FS8\\data1\\";
+	data2 = "E:\\Garant-FS8\\data2\\";
 	
 	if (check_file(data1,"ndt"))
 	{
@@ -345,8 +345,8 @@ int copy_etalon(int copy_mode)
 
 void dataupd()
 {
-	cout << "E:\\Garant-Fs711\\DATAUPD.exe -auto  -nofinalmessage" << endl;
-	run_cmd("E:\\Garant-Fs711\\DATAUPD.exe -auto  -nofinalmessage");
+	cout << "E:\\Garant-Fs8\\DATAUPD.exe -auto  -nofinalmessage" << endl;
+	run_cmd("E:\\Garant-Fs8\\DATAUPD.exe -auto  -nofinalmessage");
 	Sleep(300000);
 	
 	cout << "Checking the updating" << endl;
@@ -359,7 +359,7 @@ int main()
 	string line1, line2;
 	
 	cout << "..............:::Manager of the circle:::............." << endl;
-	cout << "..................... Version 1.2 ...................." << endl;
+	cout << "................... Version 1.3 beta ................." << endl;
 	cout << "......................................................" << endl;
 	cout << time_now();
 	
@@ -370,11 +370,11 @@ int main()
 	run_cmd("rasdial Internet userpc1 20usern2pc1");
 	
 	cout << "Deleting files at the Garant.srv directory............" << endl;
-	clearDIR("E:\\garant.srv\\F711\\");
+	clearDIR("E:\\garant.srv\\F8\\");
 	
 	cout << "Deleting files at the delta directory................." << endl;
-	clearDIR("E:\\Garant-FS711\\delta\\Archive\\");
-	clearDIR("E:\\Garant-FS711\\delta\\");
+	clearDIR("E:\\Garant-FS8\\delta\\Archive\\");
+	clearDIR("E:\\Garant-FS8\\delta\\");
 	
 	cout << "Dowloading the updates for Etalon....................." << endl;
 	cout << time_now();
