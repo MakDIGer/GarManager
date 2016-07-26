@@ -3,7 +3,7 @@
  * 
  * Copyright 2015-2016 Nikolay <Nikolay@REX>
  * 
- * Version 1.32 beta
+ * Version 1.33 beta
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -200,7 +200,7 @@ if (check_process(process_name_check))
 void download(string day)
 {
 	cout << endl;
-	buffer_line = "E:\\Garant-FS80\\Download.exe -auto -nofinalmessage -to " + day;
+	buffer_line = "E:\\Garant-FS80\\Download.exe -auto -to " + day + " -dsc 90 -revision -nofinalmessage" + day;
 	cout << buffer_line << endl;
 	run_cmd(buffer_line);
 	cout << "Waiting for the finish of downloading" << endl;
@@ -359,7 +359,7 @@ int main()
 	string line1, line2;
 	
 	cout << "..............:::Manager of the circle:::............." << endl;
-	cout << ".................. Version 1.32 beta ................." << endl;
+	cout << ".................. Version 1.33 beta ................." << endl;
 	cout << "......................................................" << endl;
 	cout << time_now();
 	
