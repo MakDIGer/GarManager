@@ -3,7 +3,7 @@
  * 
  * Copyright 2015-2016 Nikolay <Nikolay@REX>
  * 
- * Version 1.33 beta
+ * Version 1.33
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -359,7 +359,7 @@ int main()
 	string line1, line2;
 	
 	cout << "..............:::Manager of the circle:::............." << endl;
-	cout << ".................. Version 1.33 beta ................." << endl;
+	cout << ".................... Version 1.33 ...................." << endl;
 	cout << "......................................................" << endl;
 	cout << time_now();
 	
