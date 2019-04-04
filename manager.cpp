@@ -400,7 +400,7 @@ int main()
 	//	cout << time_now();
 	//	run_cmd("C:\\MTurtle\\combin.exe");
 	//	}
-	run_cmd("C:\\MTurtle\\Combin.exe")
+	run_cmd("C:\\MTurtle\\Combin.exe");
 	run_cmd("pause");
 	return 0;
 }
