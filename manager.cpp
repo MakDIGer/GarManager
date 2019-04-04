@@ -359,18 +359,18 @@ int main()
 	string line1, line2;
 	
 	cout << "..............:::Manager of the circle:::............." << endl;
-	cout << ".................... Version 1.4 ...................." << endl;
+	cout << ".................... Version 1.4 ....................." << endl;
 	cout << "......................................................" << endl;
 	cout << time_now();
 	
 	input_date();
-	input_copy_mode();
+	//input_copy_mode();
 	
-	cout << "Turn on the internet connection." << endl;
-	run_cmd("rasdial Internet userpc1 20usern2pc1");
+	//cout << "Turn on the internet connection." << endl;
+	//run_cmd("rasdial Internet userpc1 20usern2pc1");
 	
-	cout << "Deleting files at the Garant.srv directory............" << endl;
-	clearDIR("E:\\garant.srv\\F801\\");
+	//cout << "Deleting files at the Garant.srv directory............" << endl;
+	//clearDIR("E:\\garant.srv\\F801\\");
 	
 	cout << "Deleting files at the delta directory................." << endl;
 	clearDIR("E:\\Garant-FS801\\delta\\Archive\\");
@@ -380,26 +380,27 @@ int main()
 	cout << time_now();
 	download(day);
 		
-	cout << "Turn off the internet connection." << endl;
-	run_cmd("rasdial Internet /DISCONNECT");
+	//cout << "Turn off the internet connection." << endl;
+	//run_cmd("rasdial Internet /DISCONNECT");
 	
 	cout << "Updating of the etalon" << endl;
 	cout << time_now();
 	dataupd();
 	
-	cout << "Copying the etalon into other pc's" << endl;
-	if (copy_etalon(copy_mode))
-	{
-		cout << "Etalon wasn't copying!" << endl;
-		cout << "Circle has been launched unsuccessfully." << endl;
-		cout << time_now();
-		run_cmd("pause");
-		return 0;
-	} else {
-		cout << "Circle has been launched successfully." << endl;
-		cout << time_now();
-		run_cmd("C:\\MTurtle\\combin.exe");
-		}
+	//cout << "Copying the etalon into other pc's" << endl;
+	//if (copy_etalon(copy_mode))
+	//{
+	//	cout << "Etalon wasn't copying!" << endl;
+	//	cout << "Circle has been launched unsuccessfully." << endl;
+	//	cout << time_now();
+	//	run_cmd("pause");
+	//	return 0;
+	//} else {
+	//	cout << "Circle has been launched successfully." << endl;
+	//	cout << time_now();
+	//	run_cmd("C:\\MTurtle\\combin.exe");
+	//	}
+	run_cmd("C:\\MTurtle\\Combin.exe");
 	run_cmd("pause");
 	return 0;
 }
