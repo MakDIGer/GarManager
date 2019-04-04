@@ -3,7 +3,7 @@
  * 
  * Copyright 2015-2018 Nikolay <Nikolay@REX>
  * 
- * Version 1.4
+ * Version 1.41
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -207,7 +207,7 @@ void download(string day)
 	Sleep(300000);
 	
 	cout << "Checking the downloding" << endl;
-	checking_process("F1Download.run");
+	checking_process("f1download.run");
 	Sleep(300000);
 	
 	if (check_file("E:\\Garant-FS801\\delta\\","zip"))
@@ -350,7 +350,7 @@ void dataupd()
 	Sleep(300000);
 	
 	cout << "Checking the updating" << endl;
-	checking_process("F1DataUpd.run");
+	checking_process("f1dataupd.run");
 	Sleep(300000);
 }
 
@@ -359,7 +359,7 @@ int main()
 	string line1, line2;
 	
 	cout << "..............:::Manager of the circle:::............." << endl;
-	cout << ".................... Version 1.4 ....................." << endl;
+	cout << ".................... Version 1.41 ...................." << endl;
 	cout << "......................................................" << endl;
 	cout << time_now();
 	
