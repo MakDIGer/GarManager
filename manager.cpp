@@ -3,7 +3,7 @@
  * 
  * Copyright 2015-2018 Nikolay <Nikolay@REX>
  * 
- * Version 1.41
+ * Version 1.42
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -200,7 +200,7 @@ if (check_process(process_name_check))
 void download(string day)
 {
 	cout << endl;
-	buffer_line = "E:\\Garant-FS801\\Download.exe -auto -to " + day + " -dsc 90 -revision -nofinalmessage" + day;
+	buffer_line = "E:\\Garant-FS801\\download.exe -auto -to " + day + " -dsc 90 -revision -nofinalmessage" + day;
 	cout << buffer_line << endl;
 	run_cmd(buffer_line);
 	cout << "Waiting for the finish of downloading" << endl;
@@ -345,8 +345,8 @@ int copy_etalon(int copy_mode)
 
 void dataupd()
 {
-	cout << "E:\\Garant-Fs801\\DATAUPD.exe -auto  -nofinalmessage" << endl;
-	run_cmd("E:\\Garant-Fs801\\DATAUPD.exe -auto  -nofinalmessage");
+	cout << "E:\\Garant-FS801\\dataupd.exe -auto  -nofinalmessage" << endl;
+	run_cmd("E:\\Garant-FS801\\dataupd.exe -auto  -nofinalmessage");
 	Sleep(300000);
 	
 	cout << "Checking the updating" << endl;
@@ -359,7 +359,7 @@ int main()
 	string line1, line2;
 	
 	cout << "..............:::Manager of the circle:::............." << endl;
-	cout << ".................... Version 1.41 ...................." << endl;
+	cout << ".................... Version 1.42 ...................." << endl;
 	cout << "......................................................" << endl;
 	cout << time_now();
 	
